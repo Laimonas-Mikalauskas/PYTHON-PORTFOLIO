@@ -1,13 +1,13 @@
-vardas = "Laimonas"
-print("vardas")
-print( type("vardas") )
+name = "Laimonas"
+print("name")
+print( type("name") )
 
-amžius = "27"
-print("amžius")
-print( type("amžius") )
+age = "27"
+print("age")
+print( type("age") )
 
-ūgis = "181"
-print("ūgis")
-print( type("ūgis") )
+height = "181"
+print("height")
+print( type("height") )
 
 
