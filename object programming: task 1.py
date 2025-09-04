@@ -1,19 +1,19 @@
 class Rytas:
-    def __init__(self, pavadinimas, miestas):
-        self.pavadinimas = pavadinimas
-        self.miestas = miestas
+    def __init__(self, name, city):
+        self.name = name
+        self.city = city
 
-    def begti(self):
-        print(f"{self.pavadinimas, self.miestas} bėga į greitą puolimą!")
+    def run(self):
+        print(f"{self.name, self.city} runs into fast attack!")
 
-    def mesti(self):
-        print(f"{self.pavadinimas, self.miestas} meta į krepšį!")
+    def throw(self):
+        print(f"{self.name, self.citty} throws into basket!")
 
-    def gynyba(self):
-        print(f"{self.pavadinimas, self.miestas} grįžta į gynybą.")
+    def defense(self):
+        print(f"{self.name, self.city} returns to defense.")
 
-komanda = Rytas("Rytas", "Vilnius")
+team = Rytas("Rytas", "Vilnius")
 
-komanda.mesti()
+team.throw()
 
 
