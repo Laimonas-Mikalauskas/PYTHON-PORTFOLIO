@@ -1,26 +1,26 @@
 class LKLKomanda:
-    def __init__(self, pavadinimas, spalva):
-        self.pavadinimas = pavadinimas
-        self.spalva = spalva
+    def __init__(self, title, color):
+        self.title = title
+        self.color = color
 
     def zaisti(self):
-        print(f"{self.pavadinimas} žaidžia rungtynes!")
+        print(f"{self.title} plays the match!")
 
-class Zalgiris(LKLKomanda):
+class Zalgiris(LKLTeam):
+    def chant(self):
+        print(f"{self.title}: fans are chanting Green-white!")
+
+class Rytas(LKLTeam):
+    def chant(self):
+        print(f"{self.title}: fans are chanting Rytas! geriau už vedybas!")
+
+class Lietkabelis(LKLTeam):
     def skanduote(self):
-        print(f"{self.pavadinimas}: fanai skanduoja Žalia-balta!")
+        print(f"{self.title}: fans are chanting  Liet-ka-be-lis!")
 
-class Rytas(LKLKomanda):
-    def skanduote(self):
-        print(f"{self.pavadinimas}: fanai skanduoja Rytas! geriau už vedybas")
+zalgiris = Zalgiris("Kauno Žalgiris", "green and white!")
+rytas = Rytas("Vilniaus Rytas", "red and black")
+lietkabelis = Lietkabelis("Panevėžys's Lietkabelis", "bordo and white")
 
-class Lietkabelis(LKLKomanda):
-    def skanduote(self):
-        print(f"{self.pavadinimas}: fanai skanduoja Liet-ka-be-lis!")
-
-zalgiris = Zalgiris("Kauno Žalgiris", "žalia ir balta")
-rytas = Rytas("Vilniaus Rytas", "raudona ir juoda")
-lietkabelis = Lietkabelis("Panevėžio Lietkabelis", "bordo ir balta")
-
-rytas.zaisti()
-rytas.skanduote()
+rytas.play()
+rytas.chant()
