@@ -8,25 +8,25 @@ def seed_grid(func):
     def seed(*args, **kwargs):
         print("width, height, pattern")
         func(*args, **kwargs)
-    return seed
+    return info
 
 def alive_neighbors(func):
     def neighbors(*args, **kwargs):
         print("grid, x, y")
         func(*args, **kwargs)
-    return neighbors
+    return info 
 
 def step(func):
     def steps(*args, **kwargs):
         print("grid")
         func(*args, **kwargs)
-    return steps
+    return info
 
 def render(func):
     def render(*args, **kwargs):
         print("render")
         func(*args, **kwargs)
-    return render
+    return info
 
 def width (func):
     def info(*args, **kwargs):
