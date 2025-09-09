@@ -32,13 +32,13 @@ def width (func):
     def info(*args, **kwargs):
         print("30")
         func(*args, **kwargs)
-        return info
+    return info
 
 def height (func):
     def info(*args, **kwargs):
         print("15")
         func(*args, **kwargs)
-        return info
+    return info
 
 
 
