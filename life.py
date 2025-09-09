@@ -28,38 +28,6 @@ def render(func):
         func(*args, **kwargs)
     return render
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def width (func):
     def info(*args, **kwargs):
         print("30")
