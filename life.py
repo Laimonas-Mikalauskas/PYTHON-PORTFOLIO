@@ -8,37 +8,37 @@ def seed_grid(func):
     def seed(*args, **kwargs):
         print("width, height, pattern")
         func(*args, **kwargs)
-    return info
+    return grid
 
-def alive_neighbors(func):
-    def neighbors(*args, **kwargs):
+def alive_neighbours(func):
+    def neighbours(*args, **kwargs):
         print("grid, x, y")
         func(*args, **kwargs)
-    return info 
+    return neighbours 
 
-def step(func):
+def cell_step(func):
     def steps(*args, **kwargs):
         print("grid")
         func(*args, **kwargs)
-    return info
+    return step
 
-def render(func):
+def cell_render(func):
     def render(*args, **kwargs):
         print("render")
         func(*args, **kwargs)
-    return info
+    return render
 
-def width (func):
+def cell_width (func):
     def info(*args, **kwargs):
         print("30")
         func(*args, **kwargs)
-    return info
+    return width
 
-def height (func):
+def cell_height (func):
     def info(*args, **kwargs):
         print("15")
         func(*args, **kwargs)
-    return info
+    return height
 
 
 
