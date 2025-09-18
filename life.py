@@ -40,6 +40,9 @@ def cell_height (func):
         func(*args, **kwargs)
     return height
 
+print('live_cell #')
+print('dead_cell .')
+
 
 
 
