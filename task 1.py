@@ -1,22 +1,19 @@
-class BankAccount:
-    def __init__(self):
-        self._balance = 0
+a = 12
+b = 5
+c = 3
 
-    def deposit(self, amount):
-        self._balance += amount
+res1 = (a + b) * c
+res2 = a // b
+res3 = a % c
+res4 = (a + c) / b
 
-    def withdraw(self, amount):
-        if (self._balance - amount) < 0:
-            print('Not enough money!')
-            return
-        self._balance -= amount
+print(res1)
+print(res2)
+print(res3)
+print(res4)
 
-    def get_balance(self):
-        print(self._balance)
-
-acc = BankAccount()
-acc.withdraw(100)
-acc.deposit(100)
-acc.withdraw(50)
-acc.get_balance()
+print((a + b) * c)
+print(a // b)
+print(a % c)
+print((a + c) / b)
 
