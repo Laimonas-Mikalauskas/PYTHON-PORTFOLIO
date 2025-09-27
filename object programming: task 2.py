@@ -1,4 +1,4 @@
-class LKLKomanda:
+class LKLTeam:
     def __init__(self, title, color):
         self.title = title
         self.color = color
