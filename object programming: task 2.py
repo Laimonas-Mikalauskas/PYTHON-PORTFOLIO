@@ -3,7 +3,7 @@ class LKLKomanda:
         self.title = title
         self.color = color
 
-    def zaisti(self):
+    def play(self):
         print(f"{self.title} plays the match!")
 
 class Zalgiris(LKLTeam):
@@ -15,7 +15,7 @@ class Rytas(LKLTeam):
         print(f"{self.title}: fans are chanting Rytas! geriau už vedybas!")
 
 class Lietkabelis(LKLTeam):
-    def skanduote(self):
+    def chant(self):
         print(f"{self.title}: fans are chanting  Liet-ka-be-lis!")
 
 zalgiris = Zalgiris("Kauno Žalgiris", "green and white!")
