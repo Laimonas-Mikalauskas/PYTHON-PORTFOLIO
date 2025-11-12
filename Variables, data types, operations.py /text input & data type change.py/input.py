@@ -1,2 +1,2 @@
-user_input = input("Įveskite tekstą: ")
-print("Jūs įvedėte", user_input)
+user_input = input("Enter text: ")
+print("You entered", user_input)
