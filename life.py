@@ -78,8 +78,7 @@ def delay(func):
         func(*args, **kwargs)
     return info
 
-if __name__ == "__main__":
-    app.run()
+
 
 
 
